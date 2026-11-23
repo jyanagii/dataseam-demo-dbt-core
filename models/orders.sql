@@ -7,5 +7,5 @@ SELECT
   amount,
   currency,
   is_valid,
-  notes
+  currency AS discount_code
 FROM {{ source('raw', 'orders') }}
